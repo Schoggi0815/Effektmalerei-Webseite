@@ -1,0 +1,92 @@
+.MuiList-root.MuiList-root {
+  padding: 0;
+}
+
+.bossi-expand.bossi-expand {
+  justify-content: space-between;
+}
+
+.MuiContainer-root.MuiContainer-root {
+  max-width: 100%;
+  padding: 0;
+}
+
+.MuiToolbar-root.MuiToolbar-root {
+  padding: 0 8px;
+}
+
+.MuiToolbar-root .MuiIconButton-root {
+  padding: 2px;
+}
+
+.bossi-button.bossi-button {
+  font-size: 18px;
+  text-transform: none;
+  margin-right: 14px;
+}
+
+.bossi-logo {
+  margin: 10px 0 10px 0;
+  transition: 0.2s;
+  height: 66px;
+}
+
+.bossi-logo:hover {
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+.bossi-markdown-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 0 1px black;
+  flex-grow: 1;
+}
+
+.bossi-dark .bossi-markdown-wrapper {
+  box-shadow: 0 0 1px white;
+}
+
+.bossi-dark .MuiAppBar-root {
+  box-shadow: 0 1px 6px white;
+}
+
+.bossi-navbar-wrapper {
+  margin-left: auto;
+}
+
+.bossi-list-icon {
+  margin-right: 6px;
+}
+
+.bossi-button-icon.bossi-button-icon {
+  font-size: 24px;
+}
+
+.bossi-dark.bossi-header-list {
+  color: #bbb;
+  transition: 0.2s;
+}
+
+.bossi-markdown-wrapper a {
+  color: dodgerblue;
+  transition: 0.2s;
+}
+
+.bossi-markdown-wrapper a:hover {
+  color: lightblue;
+}
+
+.bossi-markdown-wrapper img {
+  max-width: 100%;
+}
+
+.bossi-banner-image {
+  width: 100%;
+}
+
+.bossi-toolbar-spacer {
+  height: 90px;
+}

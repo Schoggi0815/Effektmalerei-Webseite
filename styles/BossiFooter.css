@@ -1,0 +1,105 @@
+#youtube:hover {
+  background-color: #f16261;
+  transition: 0.5s;
+}
+#twitter:hover {
+  background-color: #63cdf1;
+  transition: 0.5s;
+}
+#facebook:hover {
+  background-color: #507cbe;
+  transition: 0.5s;
+}
+#instaBackground:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+#instaBackground {
+  opacity: 0;
+  position: absolute;
+  height: 48px;
+  width: auto;
+  border-radius: 5px;
+}
+#instagram:hover {
+  opacity: 0;
+}
+
+.socialIcons {
+  width: auto;
+  border-radius: 5px;
+}
+
+.socialIcons svg {
+  height: 48px;
+  width: auto;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  box-shadow: 0 0 5px black;
+}
+
+.bossi-dark footer {
+  background-color: #222;
+  box-shadow: 0 0 5px white;
+}
+
+footer a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer a:hover {
+  color: #222222;
+  transition: 0.2s;
+}
+
+.bossi-dark footer a:hover {
+  color: white;
+}
+
+#credentials {
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer_pic {
+    height: 60px;
+    width: auto;
+  }
+
+  .footer_pic_container.footer_pic_container a {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer_pic {
+    height: 80px;
+    width: auto;
+  }
+}
+
+.footer_pic_container {
+  margin-top: 20px;
+}
+
+.footer_pic {
+  transition: 0.2s;
+}
+
+.footer_pic:hover {
+  transform: scale(0.9);
+}
+
+.footer_pic_container a {
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 0.2s;
+}

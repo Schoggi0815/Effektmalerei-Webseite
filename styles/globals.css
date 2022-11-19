@@ -1,0 +1,49 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #666;
+  width: 100%;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+.bossi-page-container {
+  min-height: 100vh;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.bossi-page-container.bossi-dark {
+  background-color: #222;
+}
+
+html,
+body .bossi-dark {
+  color: #bbb;
+  transition: 0.2s;
+}
+
+.css-tlelie-MuiListItemText-root.css-tlelie-MuiListItemText-root {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+iframe {
+  max-width: 100%;
+}
