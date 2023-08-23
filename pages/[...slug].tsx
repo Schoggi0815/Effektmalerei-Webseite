@@ -6,11 +6,8 @@ import {
   NextPage,
 } from 'next';
 import fs from 'fs';
-import ReactMarkdown from 'react-markdown';
 import React, { useMemo } from 'react';
 import { ParsedUrlQuery } from 'querystring';
-import remarkGfm from 'remark-gfm';
-import rehypeRaw from 'rehype-raw';
 import BossiHeader, { PageType } from '../public/Components/BossiHeader';
 import * as index from './index';
 import {
@@ -32,6 +29,8 @@ import BossiFooter from '../public/Components/BossiFooter';
 import Head from 'next/head';
 import useSelectedPageTypes from '../public/Components/useSelectedPageTypes';
 import Image from 'next/image';
+import Markdown from "markdown-to-jsx";
+import BossiMaps from "../public/Components/BossiMaps";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return new Promise<GetStaticPathsResult>((resolve) => {
@@ -134,29 +133,20 @@ const Site: NextPage = ({
             alt='banner image'
           />
         )}
-        <Box sx={{ p: 3 }} className={'bossi-markdown-wrapper'}>
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
-            rehypePlugins={[rehypeRaw]}
-            components={{
-              table: (props) => (
-                <TableContainer component={Paper}>
-                  <Table {...props} />
-                </TableContainer>
-              ),
-              thead: (props) => <TableHead {...props} />,
-              tbody: (props) => <TableBody {...props} />,
-              tr: (props) => <StyledTableRow {...props} />,
-              th: (props) => (
-                <StyledTableCell>{props.children}</StyledTableCell>
-              ),
-              td: (props) => (
-                <StyledTableCell>{props.children}</StyledTableCell>
-              ),
-            }}
-          >
+        <Box sx={{ p: { xs: 2, md: 3 }, pt: { xs: 0, md: 3 } }} className={'bossi-markdown-wrapper'}>
+          <Markdown options={{
+            overrides: {
+              table: {component: Table},
+              thead: {component: TableHead},
+              tbody: {component: TableBody},
+              tr: {component: StyledTableRow},
+              th: {component: StyledTableCell},
+              td: {component: StyledTableCell},
+              BossiMaps
+            }
+          }}>
             {content}
-          </ReactMarkdown>
+          </Markdown>
         </Box>
         <BossiFooter lightTheme={lightTheme} />
       </Box>

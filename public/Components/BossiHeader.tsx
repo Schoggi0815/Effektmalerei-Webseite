@@ -13,8 +13,6 @@ import BossiListGroup from './BossiListGroup';
 import BossiListButton from './BossiListButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import ToggleIcon from './ToggleIcon';
 
 export type PageType = {
@@ -108,7 +106,7 @@ export default function BossiHeader(props: BossiHeaderProps) {
           <Toolbar>
             <a href={'/'}>
               <img
-                src={`/bossi_logo${props.lightTheme ? '' : '_dark'}.png`}
+                src={`/bossi_logo.png`}
                 alt={'logo'}
                 className={'bossi-logo'}
               />

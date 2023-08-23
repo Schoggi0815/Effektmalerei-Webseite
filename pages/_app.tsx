@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
         },
       }),
-    [mode]
+    []
   );
 
   return (
@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         rel='stylesheet'
         href='https://fonts.googleapis.com/icon?family=Material+Icons+Outlined'
       />
-      <Component {...pageProps} switchTheme={switchTheme} lightTheme={mode} />
+      <Component {...pageProps} switchTheme={switchTheme} lightTheme={true} />
     </ThemeProvider>
   );
 }
