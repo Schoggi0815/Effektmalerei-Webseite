@@ -2,3 +2,67 @@
   link: '/'
   title: Home
   icon: home
+- file: ''
+  title: Aktuell
+- file: 'angebote'
+  title: Angebote
+  pages:
+    - file: ''
+      title: Maltechniken
+    - file: ''
+      title: Beschriftungen
+    - file: ''
+      title: Spachteltechnik
+    - file: ''
+      title: Vergolden
+    - file: ''
+      title: Spanndecken
+    - file: ''
+      title: Fugenlose Bodenbeläge
+    - file: ''
+      title: Baumwollputz
+    - file: ''
+      title: Tapezieren
+    - file: ''
+      title: Akustische Verkleidungen
+- file: 'arbeiten'
+  title: Arbeiten
+  pages:
+    - file: ''
+      title: Maltechniken
+    - file: ''
+      title: Beschriftungen
+    - file: ''
+      title: Spachteltechnik
+    - file: ''
+      title: Vergolden
+    - file: ''
+      title: Spanndecken
+    - file: ''
+      title: Fugenlose Bodenbeläge
+    - file: ''
+      title: Baumwollputz
+    - file: ''
+      title: Tapezieren
+- file: 'kurse'
+  title: Kurse
+  pages:
+    - file: ''
+      title: Aktuell
+    - file: ''
+      title: In Vorbereitung
+- file: ''
+  title: Kontakt
+- file: ''
+  title: Partner
+- file: 'farben'
+  title: Über Farben
+  pages:
+    - file: ''
+      title: Farb-Wahrnehmung
+    - file: ''
+      title: Die Physik der Farben
+    - file: ''
+      title: Additive Farben
+    - file: ''
+      title: Subtraktive Farben

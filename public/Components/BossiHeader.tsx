@@ -138,13 +138,13 @@ export default function BossiHeader(props: BossiHeaderProps) {
               </IconButton>
             </Box>
             <Box>
-              <IconButton onClick={() => props.switchTheme()}>
-                <ToggleIcon
-                  on={props.lightTheme}
-                  onIcon={<LightModeOutlinedIcon />}
-                  offIcon={<DarkModeOutlinedIcon />}
-                />
-              </IconButton>
+              {/*<IconButton onClick={() => props.switchTheme()}>*/}
+              {/*  <ToggleIcon*/}
+              {/*    on={props.lightTheme}*/}
+              {/*    onIcon={<LightModeOutlinedIcon />}*/}
+              {/*    offIcon={<DarkModeOutlinedIcon />}*/}
+              {/*  />*/}
+              {/*</IconButton>*/}
             </Box>
           </Toolbar>
         </Container>

@@ -47,9 +47,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     () =>
       createTheme({
         palette: {
-          mode: mode ? 'light' : 'dark',
+          mode: 'light',
           primary: {
-            main: mode ? '#666' : '#bbb',
+            main: '#204070',
           },
           secondary: {
             main: '#fff',
