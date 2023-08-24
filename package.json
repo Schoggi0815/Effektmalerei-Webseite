@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --ext .ts,.tsx",
-    "clean": "prettier --write ."
+    "clean": "prettier --write .",
+    "image": "docker build -t schoggi/effektmalerei-website:v1 ."
   },
   "husky": {
     "hooks": {

@@ -1,12 +1,17 @@
 import React from 'react';
-import {ImageList, Toolbar} from '@mui/material';
+import {CssVarsTheme, ImageList, Toolbar, useMediaQuery} from '@mui/material';
 import Image from "next/image";
+import {useTheme} from "@mui/styles";
 
 export default function MainPage() {
+  const theme: CssVarsTheme = useTheme();
+  const isPhone = useMediaQuery(theme.breakpoints.down('sm'));
+  console.log(isPhone);
+
   return (
     <div className={'main-page'}>
       <Toolbar sx={{ height: 90 }} />
-      <ImageList variant={'masonry'} cols={3} gap={8}>
+      <ImageList variant={'masonry'} cols={isPhone ? 2 : 3} gap={8}>
         <Image src={'/images/img1.jpg'} width={800} height={599}/>
         <Image src={'/images/img2.jpg'} width={800} height={599}/>
         <Image src={'/images/img3.jpg'} width={600} height={800}/>
